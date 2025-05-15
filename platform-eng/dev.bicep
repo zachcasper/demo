@@ -18,19 +18,19 @@ resource dev 'Applications.Core/environments@2023-10-01-preview' = {
       'Radius.Resources/postgreSQL': {
         default: {
           templateKind: 'terraform'
-          templatePath: 'git::https://github.com/zachcasper/demo.git//recipes/kubernetes/postgresql'
+          templatePath: 'git::https://github.com/zachcasper/demo.git//platform-eng/recipes/kubernetes/postgresql'
         }
       }
       'Radius.Resources/redis': {
         default: {
           templateKind: 'terraform'
-          templatePath: 'git::https://github.com/zachcasper/demo.git//recipes/kubernetes/redis'
+          templatePath: 'git::https://github.com/zachcasper/demo.git//platform-eng/recipes/kubernetes/redis'
         }
       }
       'Radius.Resources/mySQL': {
         default: {
           templateKind: 'terraform'
-          templatePath: 'git::https://github.com/zachcasper/demo.git//recipes/kubernetes/mySQL'
+          templatePath: 'git::https://github.com/zachcasper/demo.git//platform-eng/recipes/kubernetes/mySQL'
         }
      }
     }
